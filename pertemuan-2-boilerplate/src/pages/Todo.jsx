@@ -85,7 +85,7 @@ const update = (index, user) => {
   if (index >= 0 && index < users.length) {
     users[index] = user;
   } else {
-    console.log("Invalid index for updating user.");
+    console.log("Indeks tidak valid untuk memperbarui pengguna.");
   }
   all();
 };
@@ -96,7 +96,7 @@ const destroy = (index) => {
   if (index >= 0 && index < users.length) {
     users.splice(index, 1);
   } else {
-    console.log("Invalid index for deleting user.");
+    console.log("Indeks tidak valid untuk menghapus pengguna.");
   }
   all();
 };
